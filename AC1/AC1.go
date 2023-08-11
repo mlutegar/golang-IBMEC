@@ -39,20 +39,21 @@ func main() {
 func e_primo(num int) {
 	var divisores = 0
 
-	fmt.Print("Os divisores são: ")
 	for i := 1; i <= num; i++ {
 		if num%i == 0 {
 			divisores++
-			fmt.Print(i, ", ")
 		}
 	}
-
-	fmt.Print("\n")
 
 	if divisores == 2 {
 		fmt.Println("É um número primo!")
 	} else {
-		fmt.Println("Não é um número primo.")
+		fmt.Print("Não é um número primo. Os divisores são:")
+		for i := 1; i <= num; i++ {
+			if num%i == 0 {
+				fmt.Println(i, " ")
+			}
+		}
 	}
 
 }
