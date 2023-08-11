@@ -1,2 +1,2 @@
 # golang-IBMEC
-Essa é a aba de exercicios
+Essa é a branch de exercicios
