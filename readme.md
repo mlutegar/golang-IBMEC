@@ -3,8 +3,8 @@ Este repositório contém os meus estudos sobre a linguagem de programação Gol
 
 # Branchs feitas
 Esse repositrório possue duas frentes de branchs:
-- A primeira para o acompanhamento das aulas: [https://github.com/mlutegar/golang-IBMEC/tree/materia](url) 
-- A segunda para a realização de trabalhos: [https://github.com/mlutegar/golang-IBMEC/tree/exercicios](url)
+- A primeira para o acompanhamento das aulas: [**materias**](https://github.com/mlutegar/golang-IBMEC/tree/materia)
+- A segunda para a realização de trabalhos: [**exercicios**](https://github.com/mlutegar/golang-IBMEC/tree/exercicios)
 
 # Objetivos
 Os meus objetivos com este repositório são:
