@@ -48,14 +48,13 @@ func e_primo(num int) {
 	if divisores == 2 {
 		fmt.Println("É um número primo!")
 	} else {
-		fmt.Print("Não é um número primo. Os divisores são:")
+		fmt.Print("Não é um número primo. Os divisores são: ")
 		for i := 1; i <= num; i++ {
 			if num%i == 0 {
-				fmt.Println(i, " ")
+				fmt.Print(i, " ")
 			}
 		}
 	}
-
 }
 
 // fibo: recebe um número e calcula o n-ésimo elemento da série de fibonacci
