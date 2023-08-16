@@ -1,0 +1,10 @@
+Subir no mesmo repositório enviado para a AC1
+
+Fazer todo o projeto em um único arquivo
+
+Submeter link via estudante
+
+1. Elabore um struct Contato, que deve conter os campos nome e e-mail. O struct deve conter um método para alterar o e-mail. ✔
+2. Elabore uma função adicionaContato, que recebe um contato e um array com até 5 elementos e inclui o contato no primeiro elemento vazio do array. ✔
+3. Elabore uma função excluiContato, que recebe um array de 5 elementos e elimina o último contato válido. ✔
+4. Elabore uma interface por linha de comando na função main, que cria um array de 5 elementos e permite a inclusão ou exclusão de contatos.
