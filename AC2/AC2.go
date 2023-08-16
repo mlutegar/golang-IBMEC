@@ -15,9 +15,9 @@ func (c *Contato) alterarEmail(emailNovo string){
 func main()  {
 	var listaContato [5]Contato
 
-	// 4. Elabore uma interface por linha de comando na função main, que cria um array de 5 elementos e permite a inclusão ou exclusão de contatos.
+	// Interface por linha de comando que permite a inclusão ou exclusão de contatos.
 	var op int
-	op = 2
+	op = 100
 
 	for op != 0{
 		fmt.Println("\n\nCONTATOS")
