@@ -14,12 +14,13 @@ func main() {
 
 	for op != 0 {
 		fmt.Println("\nCONTATOS")
-		fmt.Print("Escolha o que quer fazer: (0 para sair, 1 para adicionar, 2 para excluir último contato, 3 para editar email, 4 exibir contatos) ")
+		fmt.Println("O que deseja fazer? \n 0: Sair \n 1: Adicionar \n 2: Excluir último contato \n 3: Editar algum email \n 4: Exibir contatos")
 
 		fmt.Scanln(&op)
 
 		switch op {
 		case 1:
+			fmt.Println("\nADIÇÃO DE CONTATO")
 			var nome string
 			var email string
 
@@ -30,13 +31,19 @@ func main() {
 
 			ctt.AdicionaContato(nome, email, &listaContato)
 		case 2:
+			fmt.Println("\nCONTATO EXCLUIDO")
 			ctt.ExcluiContato(&listaContato)
 		case 3:
+			fmt.Println("\nEDIÇÃO DE EMAIL")
 			for indice, contato := range listaContato {
-				fmt.Println("Indice: ", indice, "| Contato: ", contato)
+				if (listaContato[indice] != ctt.Contato{}) {
+					fmt.Println("Indice: ", indice, "| nome: ", contato.Nome, "| email: ", contato.Email)
+				} else {
+					fmt.Println("-")
+				}
 			}
 
-			fmt.Print("\nQual é o indice da conta que deseja alterar? ")
+			fmt.Print("Qual é o indice da conta que deseja alterar? ")
 			var i int
 			fmt.Scanln(&i)
 
@@ -52,8 +59,13 @@ func main() {
 			}
 
 		case 4:
-			for indice, contato := range listaContato { // retorna sempre dois valores para cada iteração
-				fmt.Println("Indice: ", indice, "| Contato: ", contato)
+			fmt.Println("\nEXIBIÇÃO DE CONTATO")
+			for indice, contato := range listaContato {
+				if (listaContato[indice] != ctt.Contato{}) {
+					fmt.Println("Indice: ", indice, "| nome: ", contato.Nome, "| email: ", contato.Email)
+				} else {
+					fmt.Println("-")
+				}
 			}
 		}
 	}
