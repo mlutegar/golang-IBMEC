@@ -1,3 +1,6 @@
+// ex1: nomenclatura de campos e métodos começando com letra maiúscula (-0,2)
+// nome e email e alterarEmail deveria ser Nome, Email e AlterarEmail.
+
 package main
 
 import "fmt"
