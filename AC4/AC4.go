@@ -20,7 +20,7 @@ package main
 import "fmt"
 
 func main()  {
-	qtdMovimento := hanoi(64, "A", "C", "B", 1)
+	qtdMovimento := hanoi(5, "A", "C", "B", 1)
 	fmt.Println("\nForam necessários", qtdMovimento-1, "movimentos")
 }
 
