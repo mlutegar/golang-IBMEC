@@ -1,0 +1,11 @@
+Como se usa o fmt.scan?
+fmt.scan(&nomeVariavel)
+
+Como crio um slice?
+var slice []int
+
+Como eu adiciono um item em um no slice?
+slice = append(slice, 1)
+
+Como criar um slice com um tamanho?
+slice := make([]int, 10)
