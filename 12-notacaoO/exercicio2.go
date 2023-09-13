@@ -15,7 +15,6 @@ package main
 import "fmt"
 
 func main() {
-	// declarando as variaveis
 	var num_alunos, aux int
 
 	fmt.Scan(&num_alunos)
@@ -33,9 +32,9 @@ func main() {
 			}
 		}
 
-		for _, v := range alunos {
-			if max < v {
-				max = v
+		for _, aluno := range alunos {
+			if aluno > max {
+				max = aluno
 			}
 		}
 

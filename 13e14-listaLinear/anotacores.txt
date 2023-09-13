@@ -1,0 +1,5 @@
+// O que é underflow?
+// R: É quando o valor de um número é menor que o valor mínimo que pode ser representado pelo tipo de dado.
+
+// O que é overflow?
+// R: É quando o valor de um número é maior que o valor máximo que pode ser representado pelo tipo de dado.
