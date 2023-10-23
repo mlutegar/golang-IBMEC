@@ -21,11 +21,8 @@ type ListaDuplamenteEncadeado struct {
 // Sequencia de testes de cada função
 func main() {
 	var l ListaDuplamenteEncadeado
-	n1 := &No{chave: 2}
-	n2 := &No{chave: 4}
-	l.cabeca = n1
-	n1.proxima = n2
-	n2.anterior = n1
+	l.InserirNo(2)
+	l.InserirNo(4)
 
 	fmt.Println("\nExibindo a lista duplamente encadeada:")
 	l.ExibirListaDuplamenteEncadeada()
@@ -103,18 +100,25 @@ func (l *ListaDuplamenteEncadeado) InserirNo(ch int) {
 
 	novoNo := &No{chave: ch}
 
+	if l.cabeca == nil {
+		l.cabeca = novoNo
+		return
+	}
+
 	if ant == nil {
 		novoNo.proxima = l.cabeca
 		l.cabeca.anterior = novoNo
 		l.cabeca = novoNo
-	} else {
-		novoNo.proxima = ant.proxima
-		ant.proxima = novoNo
-		novoNo.anterior = ant
-		if novoNo.proxima != nil {
-			novoNo.proxima.anterior = novoNo
-		}
+		return
 	}
+
+	novoNo.proxima = ant.proxima
+	ant.proxima = novoNo
+	novoNo.anterior = ant
+	if novoNo.proxima != nil {
+		novoNo.proxima.anterior = novoNo
+	}
+
 }
 
 // RemoverNo remove um nó na lista duplamente encadeada ordenada
