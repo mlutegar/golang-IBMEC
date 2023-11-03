@@ -1,4 +1,9 @@
 /*
+	Michel Lutegar D'Orsi Pereira
+	28/08/2023
+*/
+
+/*
 PROGRAMA METEOROS
 	contFazenda := 0
 	mensagem := ""
@@ -24,16 +29,16 @@ import (
 	"strconv"
 )
 
-func main(){
+func main() {
 	// declaração de variaveis
 	var x, y, x1, y1, x2, y2, numMeteoritos, meteoritosNaFazenda int
 	contFazenda := 0
 	mensagem := ""
 
-	for{
+	for {
 		fmt.Scanln(&x1, &y1, &x2, &y2)
 		// Condições de parada é importante colocar sempre no inicio do for. É uma boa prática.
-		if (x1 == 0 && x2 == 0 && y1 == 0 && y2 == 0){
+		if x1 == 0 && x2 == 0 && y1 == 0 && y2 == 0 {
 			break
 		}
 
@@ -46,7 +51,7 @@ func main(){
 
 		for meteorito := 1; meteorito <= numMeteoritos; meteorito++ {
 			fmt.Scanln(&x, &y)
-			if (x1 <= x && x <= x2 && y2 <= y && y <= y1) {
+			if x1 <= x && x <= x2 && y2 <= y && y <= y1 {
 				meteoritosNaFazenda++
 			}
 		}

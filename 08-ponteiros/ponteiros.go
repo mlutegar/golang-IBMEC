@@ -1,3 +1,8 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	21/08/2023
+*/
+
 package main
 
 import (
@@ -5,20 +10,20 @@ import (
 	"strings"
 )
 
-type Pessoa struct{
-	Nome string
+type Pessoa struct {
+	Nome  string
 	Email string
 }
 
 // Métodos começam com letra maiuscula e funções com letras minusculas
-func (p *Pessoa) AlterarEmail(novoEmail string){
+func (p *Pessoa) AlterarEmail(novoEmail string) {
 	p.Email = novoEmail
 }
 
 // Método 1, sem usar ponteiro. Ele duplica a lista para poder fazer a minpulação. Método não muito eficiente pois duplica memoria.
-func adicionaPessoa1(p Pessoa, a [5]Pessoa) [5] Pessoa{
-	for ind, pessoa := range a{
-		if (pessoa == Pessoa{}){
+func adicionaPessoa1(p Pessoa, a [5]Pessoa) [5]Pessoa {
+	for ind, pessoa := range a {
+		if (pessoa == Pessoa{}) {
 			a[ind] = p
 			break
 		}
@@ -27,19 +32,19 @@ func adicionaPessoa1(p Pessoa, a [5]Pessoa) [5] Pessoa{
 }
 
 // Método 2, usando ponteiro. É um método mais eficiente de adicionar elementos a uma array. Nesse caso ele não duplica a array, ele altera a array diretamente.
-func adicionaPessoa2(p Pessoa, a *[5]Pessoa){
-	for ind, pessoa := range a{
-		if (pessoa == Pessoa{}){
+func adicionaPessoa2(p Pessoa, a *[5]Pessoa) {
+	for ind, pessoa := range a {
+		if (pessoa == Pessoa{}) {
 			a[ind] = p
 			break
 		}
 	}
 }
 
-func main(){
+func main() {
 	var pessoas [5]Pessoa
 	p1 := Pessoa{
-		Nome: "aaa",
+		Nome:  "aaa",
 		Email: "bbb",
 	}
 
@@ -50,15 +55,15 @@ func main(){
 	x := 5
 	y := x
 
-	fmt.Println(x,y) // 5 5
+	fmt.Println(x, y) // 5 5
 
 	x = 6
-	fmt.Println(x,y) // 6 5
+	fmt.Println(x, y) // 6 5
 
 	z := &x // z é um ponteiro, que aponta para x
 	fmt.Println(z)
 	fmt.Println(x, *z) // 6 6
-	fmt.Println(&x) // referência
+	fmt.Println(&x)    // referência
 
 	var w *int
 	fmt.Println(w) // nill
@@ -74,7 +79,7 @@ func main(){
 	fmt.Println(mensagem)
 }
 
-func alteraMensagem(msg *string){
+func alteraMensagem(msg *string) {
 	// strings.ReplaceAll(stringOriginal string, textoProcurar string, textoSubstituir string)
 	// "mundo" -> turma
 

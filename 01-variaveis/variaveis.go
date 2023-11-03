@@ -1,3 +1,9 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	09/08/2023
+	ANOTADO
+*/
+
 package main
 
 import "fmt"
@@ -31,7 +37,6 @@ func main() {
 
 	var numero float64
 	numero = 4.7
-
 
 	var n5 = 10.55 // float64
 	fmt.Println(numero, n5)

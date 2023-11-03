@@ -1,3 +1,8 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	13/09/2023
+*/
+
 package main
 
 import (
@@ -8,7 +13,6 @@ const (
 	// MaxTam é o tamanho máximo da lista
 	MaxTam = 10
 )
-
 
 func main() {
 	lista := [MaxTam]int{2, 5, 7, 9, 12, 14}
@@ -125,7 +129,7 @@ func Remove2(lista *[MaxTam]int, tamanho_atual *int, valor int) string {
 // BuscaLinear1 busca um valor em uma lista
 func BuscaLinear1(lista [MaxTam]int, n, valor int) int {
 	i := 0
-	for i < n{
+	for i < n {
 		if lista[i] == valor {
 			return i
 		}

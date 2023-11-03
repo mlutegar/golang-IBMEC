@@ -1,3 +1,8 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	08/09/2023
+*/
+
 // Dado um array de números inteiros positivos, encontre o comprimento da maior subsequência crescente contígua. Uma subsequência crescente é uma sequência de elementos em que cada elemento subsequente é estritamente maior do que o anterior
 
 package main
@@ -7,7 +12,7 @@ import (
 )
 
 func main() {
-	var array [12]int = [12]int{1, 2, 1, 1,3,67,123,45,2314,54,4, 5}
+	var array [12]int = [12]int{1, 2, 1, 1, 3, 67, 123, 45, 2314, 54, 4, 5}
 
 	tam := getMaiorSubsequênciaCresc(array)
 
@@ -15,7 +20,7 @@ func main() {
 }
 
 func getMaiorSubsequênciaCresc(array [12]int) int {
-	soma, somaAux := 1 , 1
+	soma, somaAux := 1, 1
 
 	for i, _ := range array {
 		if i == 0 {

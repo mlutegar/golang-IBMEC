@@ -1,4 +1,9 @@
 /*
+	Michel Lutegar D'Orsi Pereira
+	30/08/2023
+*/
+
+/*
 programa rumoAos9(n){
 	se n = "9" então:
 		retorna é multiplo de 9
@@ -20,10 +25,10 @@ import (
 	"strconv"
 )
 
-func main(){
+func main() {
 	var numeros []string = make([]string, 0)
 
-	for{
+	for {
 		var numero string
 		fmt.Scanln(&numero)
 
@@ -40,7 +45,7 @@ func main(){
 }
 
 func rumoAos9(n string, grau int) string {
-	if n=="9" {
+	if n == "9" {
 		if grau == 0 {
 			grau = 1
 		}

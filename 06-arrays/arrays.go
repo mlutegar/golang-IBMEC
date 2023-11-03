@@ -1,8 +1,14 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	14/08/2023
+	ANOTADO
+*/
+
 package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// Array é uma coleção de dados do mesmo tipo, e possui tamanho fixo.
 	// Declação explicita
 	var filmes [5]string
@@ -13,7 +19,7 @@ func main(){
 	fmt.Println(filmes)
 
 	// Declaração curta
-	numeros := [4]int{0,2,4,6}
+	numeros := [4]int{0, 2, 4, 6}
 	fmt.Println(numeros)
 
 	// Slices são estruturas mais flexiveis
@@ -28,21 +34,20 @@ func main(){
 	fmt.Println(novosNumeros)
 
 	// printf: é um print que permite formatar o texto dentro.
-	fmt.Printf("%p", &numeros) // printando o endereço de memória da variavel numeros
-	fmt.Println("")
+	fmt.Printf("%p", &numeros) // printando o enders	fmt.Println("")
 
 	// Estrutura de repetição para arrays e para slices
 	fmt.Println("--------------------")
 
-	for i := 0; i < len(numeros); i++{
+	for i := 0; i < len(numeros); i++ {
 		fmt.Println(numeros[i])
 	}
 
-	for indice, num := range numeros{ // retorna sempre dois valores para cada iteração
+	for indice, num := range numeros { // retorna sempre dois valores para cada iteração
 		fmt.Println("Indice: ", indice, "- valor: ", num)
 	}
 
-	for _, num := range numeros{ // não salva o indice
+	for _, num := range numeros { // não salva o indice
 		fmt.Println("Valor: ", num)
 	}
 
@@ -62,17 +67,15 @@ func main(){
 }
 
 // Em Go, quando passamos um array como parâmetro criamos uma cópia deste array
-func modificarArray(a [4]int){
+func modificarArray(a [4]int) {
 	a[0] = 999
 }
 
-func modificarSlice(s []int){
+func modificarSlice(s []int) {
 	s[0] = 999
 }
 
 func criarSlice() []int {
-	novoSlice := []int{10,20,30}
+	novoSlice := []int{10, 20, 30}
 	return novoSlice
 }
-
-// QUANDO USAR MAPS EM JAVA????

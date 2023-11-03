@@ -1,9 +1,16 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	09/08/2023
+	ANOTADO
+*/
+
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	var x, y, z = 4, 10, -2
-	
+
 	// aritméticos
 	fmt.Println(x + y)
 	fmt.Println(x - y)

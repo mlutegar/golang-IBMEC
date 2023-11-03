@@ -1,4 +1,9 @@
 /*
+	Michel Lutegar D'Orsi Pereira
+	28/08/2023
+*/
+
+/*
 	ALGORITMO - CARTAS
 
 	n1, n2 := 0 // aqui poderiamos usar um int8, pois o intervalo de números é bem pequeno.
@@ -31,7 +36,7 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 	n1, n2 := 0, 0
 	classificação := ""
 
@@ -50,13 +55,13 @@ func main(){
 		// Estamos assumindo que não vai dar problema
 		n2, _ = strconv.Atoi(strNumero)
 
-		if n1 == 0{
+		if n1 == 0 {
 			n1 = n2
 			continue
 		}
 
-		if n2>n1{
-			if classificação == ""{
+		if n2 > n1 {
+			if classificação == "" {
 				classificação = "C"
 			} else if classificação == "D" {
 				classificação = "N"
@@ -64,8 +69,8 @@ func main(){
 			}
 		}
 
-		if n1>n2{
-			if classificação == ""{
+		if n1 > n2 {
+			if classificação == "" {
 				classificação = "D"
 			} else if classificação == "C" {
 				classificação = "N"

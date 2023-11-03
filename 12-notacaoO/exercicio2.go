@@ -1,4 +1,9 @@
 /*
+	Michel Lutegar D'Orsi Pereira
+	09/09/2023
+*/
+
+/*
 ALGORITMO
 
 n alunos

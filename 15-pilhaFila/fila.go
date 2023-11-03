@@ -1,3 +1,10 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	13/09/2023
+*/
+
+// o que é bitwise
+
 package main
 
 import "fmt"

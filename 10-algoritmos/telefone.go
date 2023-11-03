@@ -1,8 +1,13 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	30/08/2023
+*/
+
 package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// A função `make()` aloca memória para um slice de strings chamado `expressoes`.
 	// O tamanho do slice é 0, o que significa que ele está inicialmente vazio.
 
@@ -13,18 +18,18 @@ func main(){
 	// A notação []string é usada para declarar um slice de strings.
 	var expressoes []string = make([]string, 0)
 
-	for{
+	for {
 		var expressao string
 		fmt.Scanln(&expressao)
 
-		if expressao=="" {
+		if expressao == "" {
 			break
 		}
 
 		expressoes = append(expressoes, expressao)
 	}
 
-	for _,expressao := range expressoes {
+	for _, expressao := range expressoes {
 		fmt.Println(encontreOTelefone(expressao))
 	}
 }

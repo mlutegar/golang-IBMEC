@@ -1,3 +1,8 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	08/09/2023
+*/
+
 // Dado um array de números inteiros positivos e um valor alvo, encontre um par de números no array cuja soma seja igual ao valor alvo. Se nenhum par for encontrado, retorne um valor (-1, -1) indicando que nenhum par foi encontrado.
 
 package main
@@ -15,10 +20,10 @@ func main() {
 	fmt.Println(num1, num2)
 }
 
-func getPares(array [5]int, valor int) (int, int){ // O(n^2)
+func getPares(array [5]int, valor int) (int, int) { // O(n^2)
 	for _, i := range array {
 		for _, j := range array {
-			if (i+j == valor) {
+			if i+j == valor {
 				return i, j
 			}
 		}

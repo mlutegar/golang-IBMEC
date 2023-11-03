@@ -1,3 +1,8 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	24/09/2023
+*/
+
 package main
 
 import "fmt"

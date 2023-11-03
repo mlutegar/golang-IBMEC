@@ -1,4 +1,9 @@
 /*
+	Michel Lutegar D'Orsi Pereira
+	28/08/2023
+*/
+
+/*
 PROGRAMA MAIOR_NUMERO
 
 	maior := 0
@@ -13,7 +18,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	var numero int
 	maior := 0
 
@@ -21,14 +26,14 @@ func main()  {
 	// var numero int32 // não pode ser int, pois o int depende da arquitetura do computador
 	// maior := 2_147_483_648
 
-	for{
+	for {
 		fmt.Scan(&numero) // vê qual é a diferença entre Scanln e Scan. O Scan só lê a linha e o Scanln lê a linha
 
-		if numero == 0{
+		if numero == 0 {
 			break
 		}
 
-		if numero > maior{
+		if numero > maior {
 			maior = numero
 		}
 	}

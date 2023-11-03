@@ -1,7 +1,14 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	09/08/2023
+	ANOTADO
+*/
+
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	var x int
 	var y float64
 	var texto string

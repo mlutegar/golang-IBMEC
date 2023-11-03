@@ -1,14 +1,21 @@
+/*
+	Michel Lutegar D'Orsi Pereira
+	09/08/2023
+	ANOTADO
+*/
+
 package main
+
 import "fmt"
 
-func main(){
+func main() {
 	var x = 10
 
 	// ESTRUTURAS DE DECISÃO
 	// if else e else if
-	if x > 18{
+	if x > 18 {
 		fmt.Println("Caso 1")
-	} else if x < 0{
+	} else if x < 0 {
 		fmt.Println("Caso 2")
 	} else {
 		fmt.Println("Caso 3")
@@ -16,7 +23,7 @@ func main(){
 
 	// switch
 	var dia = "segunda"
-	switch dia{
+	switch dia {
 	case "segunda", "terça", "quarta", "quinta", "sexta":
 		fmt.Println("Dia de semana")
 	case "sabado", "domingo":
@@ -27,15 +34,16 @@ func main(){
 
 	// ESTRUTURAS DE REPETIÇÃO
 	// For
-	for i := 0; i < 5; i++{
+
+	for i := 0; i < 5; i++ {
 		fmt.Println(i)
 	}
 
 	fmt.Println("-----------")
-	
+
 	x = 5
 	// "while", não há o while originalmente
-	for x > 0{
+	for x > 0 {
 		fmt.Println(x)
 		x--
 	}
@@ -43,16 +51,16 @@ func main(){
 	fmt.Println("-----------")
 
 	// Uso do break e do continue
-	for x < 10{
+	for x < 10 {
 		x++
-		
-		if x==3{
+
+		if x == 3 {
 			continue
 		}
 
 		fmt.Println(x)
-		
-		if x == 5{
+
+		if x == 5 {
 			break
 		}
 	}
