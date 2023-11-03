@@ -7,6 +7,10 @@ E resolva o exercício proposto, entregando um único arquivo .go, com os algori
 - Vê o exercício
 - Implementa o algoritmo
 
+Implemente em Go os algoritmos de busca e inserção em uma árvore binária de busca.
+Considere uma árvore com nós simples, que possuem um único valor inteiro, adotado
+também como chave do nó.
+
 Os tipos (struct) para o nó e a árvore, e uma função main que testa a implementação realizada.
 - Implementa os tipos (struct)
 - Implementa a função main
