@@ -1,19 +1,19 @@
 AC8 - Estudo Dirigido 2
 
 Para este estudo dirigido, consulte os slides da disciplina sobre o assunto Árvores Binárias de Busca
-- Consultar os slides
+- Consultar os slides ✅
 
 E resolva o exercício proposto, entregando um único arquivo .go, com os algoritmos implementados
-- Vê o exercício
-- Implementa o algoritmo
-
+- Vê o exercício ✅
 Implemente em Go os algoritmos de busca e inserção em uma árvore binária de busca.
 Considere uma árvore com nós simples, que possuem um único valor inteiro, adotado
 também como chave do nó.
 
+- Implementa o algoritmo ✅
+
 Os tipos (struct) para o nó e a árvore, e uma função main que testa a implementação realizada.
-- Implementa os tipos (struct)
-- Implementa a função main
+- Implementa os tipos (struct) ✅
+- Implementa a função main ✅
 
 Esta atividade pode ser feita em dupla ou individualmente. Caso seja feita em dupla,
 apenas um aluno deve subir o trabalho no estudante.ibmec.br (lembrando de mencionar os nomes da dupla).
